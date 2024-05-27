@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Character Detector</h1>
+    <input type="text" id="characterInput" maxlength="1" placeholder="Enter a character">
+    <div class="button-container">
+        <button onclick="detectCharacter()">Detect</button>
+        <button onclick="clearInput()">Clear</button>
+        <button onclick="copyResult()">Copy Result</button>
+    </div>
+    <p id="result">This is the Result</p>
+    <h2>History</h2>
+    <ul id="history"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

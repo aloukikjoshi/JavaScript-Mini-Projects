@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #87ceeb, #f8b500);
+    animation: gradientBG 10s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% { background: linear-gradient(135deg, #87ceeb, #f8b500); }
+    50% { background: linear-gradient(135deg, #f8b500, #87ceeb); }
+    100% { background: linear-gradient(135deg, #87ceeb, #f8b500); }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 13px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #632df8;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #632df8;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 48px;
+}
+
+.time-element {
+    font-size: 48px;
+    font-weight: bold;
+    color: #632df8;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.colon-element {
+    font-size: 48px;
+    font-weight: bold;
+    color: #632df8;
+    margin: 0 10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

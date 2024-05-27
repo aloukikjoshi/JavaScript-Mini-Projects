@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    height: 40px; /* Add a uniform height */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* This ensures padding and border are included in element's total width and height */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjust as needed for proper spacing */
+    display: flex; /* This will align the label and input/select on the same line */
+    align-items: center; /* This will vertically center align items on the line */
+}
+
+.form-group label {
+    display: inline-block; /* Change to inline-block */
+    font-weight: bold;
+    margin-right: 10px; /* Add some space between the label and the input/select */
+}
+
+.result, .breakdown {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.calculate-btn, .theme-toggle {
+    padding: 10px 20px;
+    background-color: #2979FF;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.calculate-btn:hover, .theme-toggle:hover {
+    background-color: #448AFF;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+}
+
+body.dark-mode .container {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .form-group input, body.dark-mode .form-group select {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
