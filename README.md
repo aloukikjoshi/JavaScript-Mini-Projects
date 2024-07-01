@@ -25,7 +25,7 @@ Before you start working on a project, please read our [Contribution Guidelines]
 
 ## 📜 License 📜
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🎉 Final Words 🎉
 
