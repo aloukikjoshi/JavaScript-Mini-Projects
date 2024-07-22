@@ -1,0 +1,25 @@
+body{
+  background-color: black;
+}
+
+h1{
+  color: white;
+}
+
+table{
+  border: 2px solid blue;
+  color: aliceblue;
+  margin: 5px;
+}
+
+td{
+  border: 1px solid blue;
+  height: 50px;
+  width: 50px;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* @media only screen and (max-width{ 
+  
+} */

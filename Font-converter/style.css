@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=DynaPuff&family=Lato&family=Orbitron&family=Raleway:wght@600&family=Rubik+Iso&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: #E4D192;
+    justify-content: center;
+    align-items: center;
+   height: 100%;
+     text-align: center;
+}
+
+.head {justify-content: center;
+    align-items: center;
+     font-family: 'Rubik Iso', cursive;
+     text-align: center;
+     font-size:2vw;
+     background-color:#1B1717 ;
+     color: white;
+     height: 4vw;
+     padding: 5px;
+     margin-bottom: 40px;
+}
+
+.primtxt {
+    font-family: 'Aboreto', cursive;
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+
+    
+}
+textarea{
+    width: 60vw;
+    box-shadow: #1B1717;
+    height: 2/5fr;
+    margin: 20px;
+    border:3px solid #8101f9;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    
+}
+input[type="submit"]{
+    width:100px;
+    height: 50px;
+    font-size: large;
+    padding:2px;
+    background-color: #8101f9f5;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: #1B1717;
+}
+input[type="submit"]:hover{
+    background-color: whitesmoke;
+    color: #8101f9
+}
+
+#fonts{
+    width: 30vw;
+    height: 30px;
+    font-size: large;
+    border:2px solid #8101f9;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    /* position:fixed; */
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+   font-weight: bold;
+
+}
+a{
+    text-decoration:none;
+    color: #b440fc;
+}

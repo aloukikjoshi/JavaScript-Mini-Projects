@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Treasure Hunt Game</title>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h1>Treasure Game</h1>
+            <h1>Welcome <span id="player-name"></span></h1>
+            <h1>Attempts : <span id="attempts"></span></h1>
+            </div>
+            <div>
+                <table id="my-game"></table>
+    </div>
+    </div>
+    </center>
+</body>
+<script>
+    let attempt = 0;
+    let audio = new Audio("audio.wav");
+    let loser = new Audio("winner.wav");
+    let winner = new Audio("loser.wav");
+    // audio.play()
+    function main() {
+        //Input Take Username
+
+        //   let username = prompt("Enter your Name");
+
+        let username = prompt("Enter your Name");
+        console.log(username);
+        while (!username) {
+            username = prompt("Username Cannot Be Empty, Please Try Again");
+        }
+        //Access ID from Player-name and Display there
+        //   document.getElementById("player-name").innerText = username;
+        document.getElementById("player-name").innerText = username;
+
+        //Generate TableData from 1 to 100
+        const tableData = [];
+        for (let i = 1; i <= 100; i++) {
+            //Push Elements 1 to 100
+            tableData.push(i);
+        }
+        console.log(tableData);
+        tableData.sort(() => Math.random() - 0.5);
+        //Access Table Tag
+        let table = document.getElementById("my-game");
+        let row,
+            col,
+            counter = 0;
+        let primesArray = [2, 3, 5, 7];
+        let visitedElements = [];
+        for (let i = 1; i <= 10; i++) {
+            // Generate Row Tags <tr>
+            row = document.createElement("tr");
+            for (let j = 1; j <= 10; j++) {
+                //Generate <td> Tags
+                col = document.createElement("td");
+                //Assign ID From Counter
+                col.id = tableData[counter];
+                //Add Inner Text from Table Data
+                // col.innerText = tableData[counter];
+                col.addEventListener("click", function (event) {
+                    // console.log(event.target.id);
+                    let clickedNumber = event.target.id;
+                    console.log(clickedNumber);
+                    if (clickedNumber == 1) {
+                        document.getElementById(clickedNumber).innerText = clickedNumber;
+                        loser.play();
+                        alert("You are a Winner, Congratulations!!!!");
+                        location.reload("/");
+                    } else if (primesArray.includes(+clickedNumber)) {
+                        winner.play();
+                        alert("You are Loser! Better Luck Next Time");
+                        location.reload("/");
+                    } else if (visitedElements.includes(+clickedNumber)) {
+                        audio.play();
+                        alert("The Block is Already Selected");
+                    } else {
+                        for (let i = +clickedNumber; i <= 100; i++) {
+                            if (i % +clickedNumber == 0) {
+                                audio.play();
+                                document.getElementById(i).style.backgroundColor =
+                                    "aquamarine";
+                                visitedElements.push(i);
+                            }
+                        }
+                        attempt++;
+                        document.getElementById("attempts").innerText = attempt;
+                    }
+                    document.getElementById("attempts").innerText = attempt;
+                });
+
+                //Append the td Tag to the Row
+                row.appendChild(col);
+                //Incement Count
+                counter++;
+            }
+            //Append the Whole row to Table
+            table.appendChild(row);
+        }
+    }
+    //Invoke the Function
+    main();
+</script>
+
+</html>
