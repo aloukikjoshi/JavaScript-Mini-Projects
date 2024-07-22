@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Converter</title>
+
+        <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="head"><h1>Font Converter</h1></div>
+        <form onsubmit="changeFont(event)">
+            <p><label class="primtxt" for="headlable">Enter your Text Here : </label></p>
+            <textarea id="textinput" name="textinput" rows="10" cols="60" placeholder="Enter Text Here"></textarea><br /><br>
+            <label for="cars" class="primtxt">Choose a Font Family:</label>
+
+            <select name="fonts" id="fonts">
+                <option value="'Dancing Script', cursive">Dancing Script</option>
+                <option value="'DynaPuff', cursive">DynaPuff </option>
+                <option value="'Lato', sans-serif">Lato</option>
+                <option value="'Orbitron', sans-serif">Orbitron</option>
+                <option value="'Rubik Iso', cursive">Rubik Iso</option>
+                <option value="'Titillium Web', sans-serif">Titillium Web</option>
+            </select><br /><br />
+            <input type="submit" value="Submit" placehol/>
+        </form>
+        <br /><br />
+        <label for"Output" class="primtxt" >Converted Text:</label><br>
+        <textarea id="newtext" rows="10" cols="60" readonly></textarea>
+    </div>
+    <footer>
+        <a href="https://instagram.com/huda.code" target="_blank">huda hajira</a><br />
+        &copy; Copyrights. All Rights Reserved
+        <!-- <script>
+        document.write(new Date().getFullYear());
+      </script> -->
+        <span id="date"> </span>
+    </footer>
+</body>
+<script>
+    document.getElementById("date").innerText = new Date().getFullYear();
+    function changeFont(event) {
+        //Prevents the page from Reloading
+        event.preventDefault();
+
+        //Getting Input from User Text Area
+        let text = document.getElementById("textinput").value;
+        console.log(text);
+
+        //Getting Font Name form Select Drop Down Menu
+        let fontname = document.getElementById("fonts").value;
+        console.log(fontname);
+
+        //This is the Element that has the Output Text Area
+        let formattedText = document.getElementById("newtext");
+
+        console.log(formattedText);
+        //Changing Text of Output Text Area
+        formattedText.innerText = text;
+
+        //adding a font Style for the Output Text Area Tag
+        formattedText.style.fontFamily = fontname;
+    }
+</script>
+
+</html>
