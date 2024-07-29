@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" type="image/png" href="clear.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="weather.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+    <body>
+    <div class="box1">
+        <div class="box2">
+        <div class="searchbar">
+            <input type="text" class="search" placeholder="Enter Location" id="place">
+            &nbsp<button class="searchbutt" onclick="search()"><i class="fa-solid fa-magnifying-glass-location fa-2xl" style="color: #000000;"></i></button>
+        </div>
+<br><br>
+
+        <div class="box3">
+            <div class="box4">
+        <div class="info1">
+            <img src="OIP.jpeg" class="icon1" id="icon">  
+            <h1 class="temp" id="temp">Check Your Weather</h1>
+            <h1 class="city" id="city"></h1>
+        </div>
+    </div>
+    <div class="box5">
+        <div id="info2">
+            <img src="wind.png" class="icon2" >  
+            <h2 id="windspeed"></h2>
+            <h3 >wind speed</h3>
+            <br><br>
+            <img src="humidity.png" class="icon2" >  
+            <h2 id="humidity"></h2>
+            <h3>Humidity</h3>
+        </div>
+    </div>
+</div>
+</div>
+
+        </div>
+
+        
+    <script src="weather.js"></script>
+    </body>
+</html>
