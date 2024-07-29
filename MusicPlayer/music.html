@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="music.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+    </head>
+    <body>
+        <div class="container">
+        <div class="box1">
+            <div>
+                <br>
+            <img  class="image" src="photo1.jpg" alt="Songphoto">
+            </div>
+            <div>
+                <audio  id="song" > <!-- controls -->
+                    <source src="Photograph - Ed Sheeran 320(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <h1 style="font-size:30px;">Photograph</h1>
+            <h3 style="font-size:20px;">Ed Sheeran</h3>
+            <div class="navbar">
+            <div><input type="range" class="bar" value="0" id="progress"></div> 
+            <br>
+           
+            <i class="fa-solid fa-backward-step"></i>&nbsp; &nbsp;
+            <i onclick="pause()" class="fa-regular  fa-2xl fa-circle-play" id="play"></i> &nbsp; &nbsp;
+            <i class="fa-solid fa-forward-step"></i> 
+       
+            <br> 
+        </div>
+        
+        </div>
+    </div>
+    <script src="music.js"></script>
+    </body>
+</html>
