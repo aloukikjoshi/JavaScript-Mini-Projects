@@ -9,8 +9,8 @@
 ## 🎯 Use of this Project 🎯
 
 This is a Vanila js project where a user write down multiple choices separating them with (",") comma's then press Enter to select a random choice.
-Examples: Choices:Footbal, BasketBall,VollyBall ("PRESS ENTER")
-this will randomly choose a option:VollyBall
+Examples: Choices: Football, BasketBall, VollyBall ("PRESS ENTER")
+This will randomly choose a option.
 
 ## 📂 Project Structure 📂
 
