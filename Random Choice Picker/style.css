@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2b88f0;
+	background: linear-gradient(
+			45deg,
+			#4f46e4 0%,
+			#4f46e4 5%,
+			transparent 5%,
+			transparent 10%,
+			#4f46e4 10%,
+			#4f46e4 15%,
+			transparent 15%,
+			transparent 20%,
+			#4f46e4 20%,
+			#4f46e4 25%,
+			transparent 25%,
+			transparent 30%,
+			#4f46e4 30%,
+			#4f46e4 35%,
+			transparent 35%,
+			transparent 40%,
+			#4f46e4 40%,
+			#4f46e4 45%,
+			transparent 45%,
+			transparent 50%,
+			#4f46e4 50%,
+			#4f46e4 55%,
+			transparent 55%,
+			transparent 60%,
+			#4f46e4 60%,
+			#4f46e4 65%,
+			transparent 65%,
+			transparent 70%,
+			#4f46e4 70%,
+			#4f46e4 75%,
+			transparent 70%,
+			transparent 80%,
+			#4f46e4 80%,
+			#4f46e4 85%,
+			transparent 85%,
+			transparent 90%,
+			#4f46e4 90%,
+			#4f46e4 95%,
+			transparent 95%
+		),
+		linear-gradient(
+			135deg,
+			#4f46e4 0%,
+			#4f46e4 5%,
+			transparent 5%,
+			transparent 10%,
+			#4f46e4 10%,
+			#4f46e4 15%,
+			transparent 15%,
+			transparent 20%,
+			#4f46e4 20%,
+			#4f46e4 25%,
+			transparent 25%,
+			transparent 30%,
+			#4f46e4 30%,
+			#4f46e4 35%,
+			transparent 35%,
+			transparent 40%,
+			#4f46e4 40%,
+			#4f46e4 45%,
+			transparent 45%,
+			transparent 50%,
+			#4f46e4 50%,
+			#4f46e4 55%,
+			transparent 55%,
+			transparent 60%,
+			#4f46e4 60%,
+			#4f46e4 65%,
+			transparent 65%,
+			transparent 70%,
+			#4f46e4 70%,
+			#4f46e4 75%,
+			transparent 70%,
+			transparent 80%,
+			#4f46e4 80%,
+			#4f46e4 85%,
+			transparent 85%,
+			transparent 90%,
+			#4f46e4 90%,
+			#4f46e4 95%,
+			transparent 95%
+		);
+	background-size: 3em 3em;
+	opacity: 1;
+	font-family: "Muli", sans-serif;
+
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+.box {
+	background-color: #3878c0;
+	aspect-ratio: 4/3;
+	size: 600px;
+	box-shadow: -5px 17px 25px 7px rgba(0, 0, 0, 0.28);
+	-webkit-box-shadow: -5px 17px 25px 7px rgba(0, 0, 0, 0.28);
+	-moz-box-shadow: -5px 17px 25px 7px rgba(0, 0, 0, 0.28);
+}
+h3 {
+	color: white;
+	margin: 10px 0 20px;
+	text-align: center;
+}
+.container {
+	width: 500px;
+}
+textarea {
+	border: none;
+	display: block;
+	width: 80%;
+	height: 100px;
+	font-family: inherit;
+	padding: 10px;
+	margin: 0 0 20px;
+	font-size: 16px;
+}
+.container,
+.box,
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tag {
+	background-color: #f0932b;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 50px;
+	margin: 2px 5px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.tag.highlight {
+	background-color: #273c75;
+}
+
+.box,
+textarea {
+	border-radius: 10px;
+	padding: 10px;
+}
