@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{margin: 50px;
+    color: goldenrod;
+    text-align: center;
+   
+}
+
+body{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+   
+}
+.hero{
+    
+margin: 20px;
+display: flex;
+flex-flow: column;
+gap: 1.5rem;
+align-items: center;
+
+   
+}
+#message{
+    font-style: italic;
+}
+.button_sg{
+    width: 200px;
+    color: #016f32;
+    background: goldenrod;
+    font-weight: bolder;
+    height: 35px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 2px;
+}
+.fam{
+    gap: 0.55rem;
+}
+
+#player{
+    margin-top: 10px;
+}
