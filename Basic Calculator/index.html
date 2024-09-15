@@ -12,37 +12,39 @@
     />
   </head>
 
-  <body class="bg-dark">
-    <div class="container mt-5 p-4 border rounded shadow-sm bg-light">
-      <p class="text-center mb-4 fs-5">
-        Welcome to the Basic Calculator! You can perform simple arithmetic
-        operations such as addition, subtraction, multiplication, and division.
-        Enter two numbers below and click the desired operation button to see
-        the result.
-      </p>
-      <div class="mb-3">
-        <label class="form-label" for="in1">1st Number:</label>
-        <input class="form-control" type="number" id="in1" />
+  <body>
+    <div class="container-fluid">
+      <div class="container mt-5 p-4 border rounded shadow-sm">
+        <p class="text-center mb-4 fs-5">
+          Welcome to the Basic Calculator! You can perform simple arithmetic
+          operations such as addition, subtraction, multiplication, and
+          division. Enter two numbers below and click the desired operation
+          button to see the result.
+        </p>
+        <div class="mb-3">
+          <label class="form-label" for="in1">1st Number:</label>
+          <input class="form-control" type="number" id="in1" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="in2">2nd Number:</label>
+          <input class="form-control" type="number" id="in2" />
+        </div>
+        <div class="d-flex justify-content-between mb-3">
+          <button class="btn btn-outline-dark w-100 me-2" onclick="add()">
+            Add
+          </button>
+          <button class="btn btn-outline-dark w-100 me-2" onclick="sub()">
+            Subtract
+          </button>
+          <button class="btn btn-outline-dark w-100 me-2" onclick="mul()">
+            Multiply
+          </button>
+          <button class="btn btn-outline-dark w-100" onclick="div()">
+            Divide
+          </button>
+        </div>
+        <div class="alert alert-info text-center fs-5" id="id3"></div>
       </div>
-      <div class="mb-3">
-        <label class="form-label" for="in2">2nd Number:</label>
-        <input class="form-control" type="number" id="in2" />
-      </div>
-      <div class="d-flex justify-content-between mb-3">
-        <button class="btn btn-outline-dark w-100 me-2" onclick="add()">
-          Add
-        </button>
-        <button class="btn btn-outline-dark w-100 me-2" onclick="sub()">
-          Subtract
-        </button>
-        <button class="btn btn-outline-dark w-100 me-2" onclick="mul()">
-          Multiply
-        </button>
-        <button class="btn btn-outline-dark w-100" onclick="div()">
-          Divide
-        </button>
-      </div>
-      <div class="alert alert-info text-center fs-5" id="id3"></div>
     </div>
     <script src="script.js"></script>
   </body>
