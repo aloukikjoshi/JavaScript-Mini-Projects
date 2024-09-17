@@ -27,6 +27,10 @@ Before you start working on a project, please read our [Contribution Guidelines]
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## ⭐️ Star Us ⭐️
+
+If you find this repository useful, please star it to show your support!
+
 ## 🎉 Final Words 🎉
 
 Happy coding! We hope this repository helps you on your journey to becoming a proficient JavaScript developer!
