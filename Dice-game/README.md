@@ -60,19 +60,19 @@ Here are some screenshots of the game in action:
 
 ### Game Output 1:
 
-![Dice Game Output 1](public\images\output_1.png)
+![Dice Game Output 1](public/images/output_1.png)
 
 ### Game Output 2:
 
-![Dice Game Output 2](public\images\output_2.png)
+![Dice Game Output 2](public/images/output_2.png)
 
 ### Game Output 3:
 
-![Dice Game Output 3](public\images\output_3.png)
+![Dice Game Output 3](public/images/output_3.png)
 
 ### Game Output 4:
 
-![Dice Game Output 3](public\images\output_4.png)
+![Dice Game Output 3](public/images/output_4.png)
 
 ## 🤝 Contributing 🤝
 
