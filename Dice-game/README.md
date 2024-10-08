@@ -1,5 +1,10 @@
 # 🎲 Dice Game 🎲
 
+**Developed by [Aayush Shrestha](https://github.com/aayush105)**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/aayushrestha/)  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/aayush105)
+
 ## 📚 Technologies Used 📚
 
 - **React**: Used for building the UI and handling game interactions.
