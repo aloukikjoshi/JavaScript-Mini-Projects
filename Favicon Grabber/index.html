@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon Grabber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Favicon Grabber 🎯</h1>
+  <label for="urltext">Enter Website URL:</label>
+  <input type="text" id="urltext" placeholder="e.g., google.com">
+  <br>
+  <label for="size">Select Size (Google API):</label>
+  <select id="size">
+    <option value="default">Default (DuckDuckGo API)</option>
+    <option value="16">16x16</option>
+    <option value="32">32x32</option>
+    <option value="48">48x48</option>
+    <option value="64">64x64</option>
+    <option value="128">128x128</option>
+  </select>
+  <br>
+  <input type="button" value="Grab Favicon" onclick="startIT()">
+  <input type="button" value="Download Favicon" onClick="downloadFAV()">
+
+  <br>
+  <img id="theimg" src="" alt="Favicon will appear here" />
+  
+  <!-- Footer -->
+  <footer>
+    <p>Made with &#10084; by Aloukik Joshi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
