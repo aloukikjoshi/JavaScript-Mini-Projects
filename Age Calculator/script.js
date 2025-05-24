@@ -5,9 +5,16 @@ const resultDiv = document.getElementById("result");
 calculateBtn.addEventListener("click", function() {
 
     const dob = new Date(dobInput.value);
-    const ageInMs = Date.now() - dob.getTime();
-    const ageDate = new Date(ageInMs);
-    const age = Math.abs(ageDate.getUTCFullYear()- 1970);
+
+    const currentDate=new Date();
+
+    const year=currentDate.getFullYear() - dob.getFullYear() ;
+
+    const month=currentDate.getMonth() - dob.getMonth();
+
+    const date= currentDate.getDate() - dob.getDate();
+
+
 
     // Display formatted date with options for customization
     const dobFormatted = dob.toLocaleDateString("en-US", {
@@ -16,6 +23,7 @@ calculateBtn.addEventListener("click", function() {
         day: "numeric"
     });
 
-    resultDiv.innerHTML = `You were born on ${dobFormatted} and your age is ${age} years.`;
+
+    resultDiv.innerHTML = `You were born on ${dobFormatted} and your age is ${year} years ${month} months ${date} days.`;
 
 });
