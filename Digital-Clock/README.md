@@ -22,3 +22,7 @@ This project is contained in its own directory. Here is a brief overview of the 
 
 1. Clone the repository and navigate to the Digital Clock directory.
 2. Open `index.html` in your browser.
+3. You can see the digital clock in the 24-Hour Format and you can change that format in 12-Hour.
+4. You can see that there is the difference in the background color after changing the formats. 
+
+
