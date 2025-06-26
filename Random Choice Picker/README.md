@@ -24,3 +24,5 @@ This project is contained in its own directory. Here is a brief overview of the 
 
 1. Clone the repository and navigate to the Digital Clock directory.
 2. Open `index.html` in your browser.
+3. You can right your choices in input box, and after click enter you get your choices at the below space.
+

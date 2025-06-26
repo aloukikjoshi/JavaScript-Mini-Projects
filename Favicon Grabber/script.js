@@ -17,6 +17,7 @@ function startIT() {
   }
 }
 
+
 // Function to grab the favicon
 function grabFAV() {
   var myurl = document.getElementById("urltext").value;

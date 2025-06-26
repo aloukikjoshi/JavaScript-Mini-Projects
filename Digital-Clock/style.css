@@ -13,6 +13,7 @@ body {
     align-items: center;
 }
 
+
 @keyframes gradientBG {
     0% { background: linear-gradient(135deg, #87ceeb, #f8b500); }
     50% { background: linear-gradient(135deg, #f8b500, #87ceeb); }
@@ -75,4 +76,23 @@ h1 {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+.btns{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+button
+{
+    text-align: center;
+    background-color: #632df8;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    border:transparent;
+    cursor:pointer;
+
 }
