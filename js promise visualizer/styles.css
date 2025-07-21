@@ -1,0 +1,73 @@
+body {
+  font-family: monospace;
+  background-color: #f0f4f8;
+  padding: 2rem;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+#visualization,
+#log {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  min-height: 100px;
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+.promise-box {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  background-color: #ffeb3b;
+  color: black;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.promise-fulfilled {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.promise-rejected {
+  background-color: #ef5350;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
