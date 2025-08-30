@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Song Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Random Song Generator</h1>
+    <div class="main">
+      <div class="inputs">
+        <h2>Pick your vibe</h2>
+        <select id="mood">
+          <option value="">Select Mood</option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="chill">Chill</option>
+          <option value="energetic">Energetic</option>
+          <option value="romantic">Romantic</option>
+        </select>
+
+        <select id="genre">
+          <option value="">Select Genre</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="hip-hop">Hip-Hop</option>
+          <option value="jazz">Jazz</option>
+          <option value="lo-fi">Lo-Fi</option>
+          <option value="electronic">Electronic</option>
+        </select>
+
+        <input type="text" id="artist" placeholder="Enter artist name (optional)">
+        <button onclick="getSong()">Generate Song</button>
+      </div>
+
+      <div id="result" class="results">
+        <p class="placeholder">Your random song will appear here...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
