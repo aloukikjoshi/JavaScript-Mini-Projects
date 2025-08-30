@@ -1,0 +1,149 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #FFD700;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Main Two-column Layout */
+.main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+}
+
+/* Input Column */
+.inputs {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.inputs h2 {
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+.inputs select {
+   width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.inputs select, .inputs input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.inputs button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1DB954;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inputs button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+/* Results Column */
+.results {
+  flex: 2;
+  min-width: 300px;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.placeholder {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Song Card */
+.song {
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.song img {
+  width: 100%;
+  max-height: 200px; 
+  object-fit: cover;  
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.song h2 {
+  margin: 10px 0 5px 0;
+  color: #FFD700;
+}
+
+.song p {
+  margin: 5px 0;
+}
+
+.song a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.song a:hover {
+  text-decoration: underline;
+}
