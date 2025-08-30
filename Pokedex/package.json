@@ -1,0 +1,14 @@
+{
+  "name": "pokedex-app",
+  "version": "1.0.0",
+  "description": "Full-stack Pokédex application",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:all": "npm run install:backend",
+    "start": "cd backend && npm start",
+    "dev": "npm run start"
+  },
+  "keywords": ["pokemon", "pokedex", "express", "api"],
+  "author": "",
+  "license": "ISC"
+}
