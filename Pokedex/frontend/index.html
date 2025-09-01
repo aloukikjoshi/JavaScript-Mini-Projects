@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Gotta Catch 'Em All!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="bg-video" autoplay loop muted playsinline>
+    <source src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.mp4" type="video/mp4">
+    </video>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="assets/pokemonLogo.svg" alt="Pokédex Logo" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+            </div>
+        </div>
+        <h1 class="title">Pokédex</h1>
+        <p class="subtitle">Discover detailed information about your favorite Pokémon. Search by name or ID to explore stats, abilities, types, and more!</p>
+        <button class="start-btn" onclick="showSearchPage()">Start Exploring</button>
+    </div>
+
+    <!-- Search Page -->
+    <div class="search-page" id="searchPage">
+        <button class="back-btn" onclick="showLandingPage()">← Back to Home</button>
+        
+        <div class="search-container">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 1.5rem;">Search for a Pokémon</h2>
+            <input type="text" class="search-input" id="pokemonInput" placeholder="Enter Pokémon name or ID (e.g., pikachu, 25)" onkeypress="handleEnterKey(event)">
+            <button class="search-btn" onclick="searchPokemon()">Search Pokémon</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Searching for Pokémon...</p>
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="pokemon-container" id="pokemonContainer">
+            <div class="pokemon-header">
+                <h2 class="pokemon-name" id="pokemonName"></h2>
+                <p class="pokemon-id" id="pokemonId"></p>
+                <img class="pokemon-image" id="pokemonImage" alt="Pokémon sprite">
+            </div>
+
+            <div class="pokemon-info">
+                <!-- Basic Info Card -->
+                <div class="info-card">
+                    <h3>Basic Information</h3>
+                    <div class="physical-stats">
+                        <div class="physical-stat">
+                            <div class="physical-stat-value" id="pokemonHeight"></div>
+                            <div class="physical-stat-label">Height (cm)</div>
+                        </div>
+                        <div class="physical-stat">
+                            <div class="physical-stat-value" id="pokemonWeight"></div>
+                            <div class="physical-stat-label">Weight (kg)</div>
+                        </div>
+                        <div class="physical-stat">
+                            <div class="physical-stat-value" id="pokemonExp"></div>
+                            <div class="physical-stat-label">Base EXP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Types Card -->
+                <div class="info-card">
+                    <h3>Types</h3>
+                    <div class="types-container" id="pokemonTypes"></div>
+                </div>
+
+                <!-- Abilities Card -->
+                <div class="info-card">
+                    <h3>Abilities</h3>
+                    <div class="abilities-list" id="pokemonAbilities"></div>
+                </div>
+
+                <!-- Weaknesses Card -->
+                <div class="info-card">
+                    <h3>Type Weaknesses</h3>
+                    <div class="weaknesses-list" id="pokemonWeaknesses"></div>
+                </div>
+
+                <!-- Stats Card -->
+                <div class="info-card">
+                    <h3>Base Stats</h3>
+                    <div class="stats-grid" id="pokemonStats"></div>
+                </div>
+
+                <!-- Species Info Card -->
+                <div class="info-card">
+                    <h3>Species Information</h3>
+                    <div id="speciesInfo"></div>
+                </div>
+            </div>
+
+            <button class="moves-btn" onclick="showMoves()">Explore All Moves</button>
+        </div>
+    </div>
+
+    <!-- Moves Page -->
+    <div class="moves-page" id="movesPage">
+        <button class="back-btn" onclick="showPokemonDetails()">← Back to Pokémon</button>
+        
+        <div class="moves-container">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 1rem;" id="movesTitle"></h2>
+            <p style="text-align: center; color: #7f8c8d; margin-bottom: 2rem;" id="movesSubtitle"></p>
+            
+            <div class="loading" id="movesLoading">
+                <div class="spinner"></div>
+                <p>Loading moves...</p>
+            </div>
+
+        <!-- Add a header row for moves table -->
+        <div class="moves-header moves-grid">
+            <div class="move-header">Name</div>
+            <div class="move-header">Type</div>
+            <div class="move-header">Power</div>
+            <div class="move-header">Accuracy</div>
+            <div class="move-header">PP</div>
+            <div class="move-header">Class</div>
+            <div class="move-header">Effect</div>
+        </div>
+        <div class="moves-grid" id="movesGrid"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
