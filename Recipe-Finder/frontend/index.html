@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍳 Recipe Finder</h1>
+            <nav class="nav">
+                <button id="favoritesBtn" class="btn btn-outline">❤️ My Favorites</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search for recipes... (e.g., chicken, pasta, vegan)"
+                        class="search-input"
+                    >
+                    <button id="searchBtn" class="search-btn">
+                        🔍 Search
+                    </button>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="filters">
+                    <button class="filter-btn active" data-diet="">All</button>
+                    <button class="filter-btn" data-diet="vegetarian">Vegetarian</button>
+                    <button class="filter-btn" data-diet="vegan">Vegan</button>
+                    <button class="filter-btn" data-diet="gluten free">Gluten Free</button>
+                    <button class="filter-btn" data-diet="ketogenic">Keto</button>
+                    <button class="filter-btn" data-diet="paleo">Paleo</button>
+                </div>
+            </section>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading recipes...</p>
+            </div>
+
+            <!-- Recipes Container -->
+            <section class="recipes-section">
+                <div class="section-header">
+                    <h2 id="sectionTitle">All Recipes</h2>
+                </div>
+                <div id="recipesContainer" class="recipes-grid">
+                    <!-- Recipe cards will be dynamically generated here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Active Timers Display -->
+    <div id="activeTimers" class="active-timers">
+        <!-- Active timers will appear here -->
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-container">
+            <div id="modalContent" class="modal-content">
+                <!-- Modal content will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
