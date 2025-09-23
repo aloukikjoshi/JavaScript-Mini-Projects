@@ -1,0 +1,14 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "A full-stack recipe finder application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && npm install && node server.js",
+    "dev": "cd backend && npm install && nodemon server.js",
+    "install:backend": "cd backend && npm install"
+  },
+  "keywords": ["recipe", "finder", "spoonacular"],
+  "author": "Your Name",
+  "license": "MIT"
+}
