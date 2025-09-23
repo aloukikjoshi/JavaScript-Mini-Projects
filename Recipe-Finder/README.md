@@ -17,7 +17,6 @@ A full-stack web application that helps users search for recipes, save favorites
 - [Development Guidelines](#development-guidelines)
 - [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
-- [Contributing](#contributing)
 
 ## Overview
 
@@ -384,36 +383,3 @@ Test endpoints directly in browser:
 - **Browser Extensions**: 
   - React Developer Tools (for debugging)
   - JSON Formatter (for API response viewing)
-
-## Contributing
-
-This project welcomes contributions from students and developers. Here's how to contribute:
-
-### Getting Started
-1. Fork the repository
-2. Clone your fork locally
-3. Create a new branch for your feature
-4. Make your changes and test thoroughly
-5. Submit a pull request with a clear description
-
-### Contribution Ideas for Beginners
-- Add more dietary filter options
-- Improve error message styling
-- Add recipe search history
-- Enhance mobile responsiveness
-- Add keyboard navigation support
-
-### Contribution Ideas for Advanced Users
-- Implement user authentication
-- Add recipe rating system
-- Create meal planning features
-- Add offline functionality
-- Implement recipe sharing
-
-### Pull Request Guidelines
-- Include a clear description of changes
-- Test your changes thoroughly
-- Follow existing code style
-- Update documentation if needed
-
-This project serves as a comprehensive introduction to modern web development practices. Students can use it as a foundation to explore more advanced concepts and build their own unique applications.
