@@ -1,0 +1,12 @@
+{
+  "name": "quote-quiz-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Quote Quiz App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
