@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Quote Quiz</h1>
+
+    <div id="game-over" class="hidden">
+      <h2 id="game-over-message"></h2>
+      <p id="final-score"></p>
+      <button id="play-again" class="next-btn">Play Again</button>
+    </div>
+
+    <div id="game-section">
+      <div class="info-bar">
+        <div>⏱️ Time Left: <span id="timer"></span>s</div>
+        <div>🏆 Score: <span id="score"></span> | Question: <span id="question-count"></span>/10</div>
+      </div>
+
+      <div class="quote-box">
+        <p id="quiz-quote"></p>
+      </div>
+
+      <div id="options" class="options"></div>
+
+      <div id="status" class="status"></div>
+
+      <button id="next-btn" class="next-btn" disabled>Next Quote</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
